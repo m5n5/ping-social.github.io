@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Login Screen */
+#login-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FF6600; /* Retro orange background */
+}
+
+.login-container {
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #00FF00; /* Green color */
+}
+
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.login-container button {
+    background: #00FF00; /* Green button */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Main App */
+#main-app {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #FF6600; /* Retro orange sidebar */
+    color: #00FF00; /* Green text */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.sidebar-btn {
+    background: none;
+    border: none;
+    color: #00FF00;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.sidebar-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #222;
+}
+
+#tweet-box {
+    margin-bottom: 20px;
+}
+
+#tweet-input {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#tweet-box button {
+    background: #00FF00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Tweet Container */
+#tweets {
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification */
+#notification {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #00FF00; /* Green color for Pong */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 100;
+    font-family: 'Press Start 2P', cursive;
+}
