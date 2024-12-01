@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add a Pixel Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen">
+        <div class="login-container">
+            <h1>Welcome to Ping</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="main-app" style="display: none;">
+        <div class="sidebar">
+            <div class="logo">Ping</div>
+            <button class="sidebar-btn">Home</button>
+            <button class="sidebar-btn">Explore</button>
+            <button class="sidebar-btn">Notifications</button>
+            <button class="sidebar-btn">Messages</button>
+            <button class="sidebar-btn">Bookmarks</button>
+            <button class="sidebar-btn">Profile</button>
+            <button class="sidebar-btn">Settings</button>
+        </div>
+        <div class="content">
+            <h1>Your Timeline</h1>
+            <div id="tweet-box">
+                <textarea id="tweet-input" placeholder="What's happening?"></textarea>
+                <button onclick="postTweet()">Ping!</button>
+            </div>
+            <div id="tweets"></div>
+        </div>
+    </div>
+
+    <!-- Pong Notification -->
+    <div id="notification">Pong!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
